@@ -1,0 +1,151 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+}
+.panel{
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    /* max-width: 975px; */
+    border-radius: 10px;
+}
+.panel-content{
+    width: 100%;
+    height: 100%;
+}
+.purple{
+    color: hsl(277, 64%, 61%);
+}
+.header{
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    font-weight: 900;
+    padding: 15px 70px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+img{
+    max-width: 100%;
+    margin: 0;
+    padding: 0px 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    filter: sepia(13%) saturate(3207%) hue-rotate(250deg) brightness(95%) contrast(80%);
+}
+
+.body{
+    padding: 0px 10px;
+    margin-top:10px;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.stats{
+    margin: 20px 0;
+    padding: 0px 25px;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    letter-spacing: 1px;
+}
+p:nth-of-type(2n+1){
+    padding-top:2em;
+    font-size: large;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+@media (min-width:1440px) {
+    .panel{
+        flex-direction: row-reverse;
+        max-width: 1440px;
+        text-align: left;
+    }
+    .body{
+        font-size: 15px;
+        margin-top: 0;
+        padding-left: 70px;
+        padding-right: 180px;
+        line-height: 1.5;
+    }
+    .header{
+        margin-top: 50px;
+        font-size:50px;
+        padding-right: 50px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .stats{
+        margin-top: 0;
+        padding: 0 70px;
+    }
+    .chika{
+        display: inline-block;
+        padding-right: 1.5em;
+        padding-top: 23px;
+    }
+    p{
+        margin-top: 8px;
+    }
+}
